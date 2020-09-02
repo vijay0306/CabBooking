@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Sign Up page </title>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+ 
+
+    <script type="text/javascript">
+            		function popup()
+            		{
+            			var UserName=document.getElementById("username");
+            			var Password=document.getElementById("password");
+            			var Email=document.getElementById("email");
+            			var Address=document.getElementById("address");
+            			var MobileNo=document.getElementById("mobileno");
+            			if(UserName.value=="" || Password.value=="" || Email.value=="" || Address.value=="" || MobileNo.value=="")
+            				swal({
+          					  title: "OOPS!",
+          					  text: "No Blank Values Are Allowed!",
+          					  icon: "error", 
+          					});
+            			
+            				else
+            				{
+            					alert("YOU ARE REGISTERED SUCCESSFULLY...");
+            				}
+                	 	 
+            		}
+   </script>
+
+<style>
+  body
+  {
+   background: url("cab2.jpg");
+    background-size: cover;
+    color: black;  
+    border-bottom: #333;
+    padding-top: 20px;
+  }
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ background-color: black;
+  letter-spacing: 3px;
+  margin-left: 260px;
+  margin-right: 260px;
+  font-style:oblique;
+  font: italic bold 16px/20px Georgia, serif;
+}
+
+li 
+{
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child 
+{
+  border-right: none;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*li a:hover:not(.active) 
+{
+  background-color: rgb(90, 87, 87);
+}
+
+/*.active {
+  background-color: #4CAF50;
+}*/
+
+p
+{
+  padding-left: 300px;
+  color: black;
+  font: italic bold 20px/30px Georgia, serif;
+  text-align: justify;
+  
+}
+
+
+h5
+{
+	font-family:sofia;
+	margin-top:2px;
+}
+
+
+
+h3
+{
+  text-transform: capitalize;
+  padding-left: 300px;
+  font-size: 30px;
+  font-family:sofia;
+
+}
+
+form
+{
+  padding-left: 630px;
+  margin-top: 10px;
+}
+
+h5
+{
+  font-size: 28px;
+  padding-left: 735px;
+  font-family:George,serif;
+  font-style:italic;
+  font-weight:bolder;
+}
+
+
+#sendBtn
+{
+  color: blue;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+h4
+{
+    color: rgb(255, 255, 255);
+    padding-left: 750px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 1em sans-serif;;
+}
+
+#logo
+{
+  float: right;
+  padding-left: 70px; 
+  min-height: max-content;
+  margin-right:10px;       
+  line-height:10px;
+  padding-top:5px;  
+}
+
+
+
+#sendBtn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  width: 36%;
+  opacity: 0.9;
+  margin-right:50px;
+  letter-spacing:4px;
+  font-weight:bolder;
+  font-size:14px;
+  border-radius:25px;
+  text-transform:uppercase;
+}
+
+#sendBtn:hover {
+  opacity: 1;
+  background-color: #32CD32;
+  color:black;
+}
+
+.input-field
+{
+padding:3px;
+}
+
+
+.input-field:focus {
+  border: 3px solid dodgerblue;
+  padding:5px;
+} 
+
+
+ul a:hover{
+  color: red !important;
+}
+
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #FBC02D;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+.active{
+    color:#FBC02D  !important;
+}
+
+h1
+{
+	margin-top:2px;
+}
+
+.style
+{
+	font: italic bold 16px/16px Georgia, serif; 
+	text-transform:capitalize;
+}
+
+</style>
+</head>
+<body>
+      <h1><center> ONLINE CAB BOOKING </center></h1>
+     
+      <ul>
+      	<label id="logo"><img src="logo.jpg"></label>
+        <li><a href="welcome.html"> HOME </a></li>
+        <li><a href="UserLogin.html"> USER </a></li>
+        <li><a href="Admin Login.html"> ADMIN </a></li>
+      </ul>
+      
+  <h3> <u>Online Cab Booking </u> </h3>
+
+  <p>Book a City Cab to your destination in town...<br> We give customer satisfaction the atmost priority <br> 
+    and so give ample options to book cab by entering <br>
+    details such as their pick-up point, drop point ,
+    date of journey etc</p>
+
+      <h5> <u> SIGN UP </u> </h5>
+
+      <form action="store.jsp" method="post">
+      <div class="style">
+       <i class="fa fa-user-circle" aria-hidden="true"></i> &nbsp
+        User Name : &nbsp &nbsp &nbsp &nbsp <input id="username" class="input-field" type = "text" placeholder=" User Name" name = "User Name" required/>
+       <br> <br>
+       <i class="fa fa-key" aria-hidden="true"></i> &nbsp
+       Password : &nbsp &nbsp &nbsp &nbsp &nbsp  <input id="password"  class="input-field" type = "Password" placeholder=" Password" name = "Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+       <br> <br>
+       <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp
+       Email : &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp    <input id="email" class="input-field" type = "email" placeholder=" abc@gmail.com" name = "email" title="Include @" required/>
+       <br> <br>
+       <i class="fa fa-location-arrow" aria-hidden="true"></i> &nbsp
+       Address : &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <input id="address" class="input-field" type = "text" placeholder=" 1234 main street" name = "Address" required />
+       <br> <br>
+       <i class="fa fa-phone-square" aria-hidden="true"></i> &nbsp
+       Mobile No :&nbsp &nbsp &nbsp &nbsp &nbsp <input id="mobileno" class="input-field" type = "number" placeholder=" Mobile No" name = "Mobile No" title="Include country code" required />
+       <br> <br>
+      
+        <button  onclick="popup()" value="register" id="sendBtn" type="submit" required> Register </button>
+         
+    </div>
+    </form>
+
+</body>
+</html>

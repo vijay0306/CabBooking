@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+  <title> Admin login page </title>
+  
+
+  
+   <script type="text/javascript">
+            		function popup()
+            		{
+            			
+            			var UserName=document.getElementById("username");
+            			var Password=document.getElementById("password");
+            			if(UserName.value=="" || Password.value=="")
+            				swal({
+            					  title: "OOPS!",
+            					  text: "INVALID CREDENTIALS......",
+            					  icon: "error",
+            					  
+            					});
+            				
+            			else
+            				{
+            					alert("YOU ARE LOGGED IN SUCCESSFULLY...");
+            				}
+            			//swal({
+            				//  title: "Good job!",
+            				  //text: "You clicked the button!",
+            				  ///icon: "success",
+            				//});
+            			
+            		}
+   </script>
+  
+  
+  
+  
+  
+<style>
+  body
+  {
+    background: url("cab2.jpg");
+    background-size: cover;
+    color: black; 
+    border-bottom: #333;
+    padding-top: 10x;
+  }
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  letter-spacing: 3px;
+  margin-left: 260px;
+  margin-right: 260px;
+  font-style:oblique;
+   font: italic bold 15px/20px Georgia, serif;
+}
+
+li 
+{
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child 
+{  
+  border-right: none;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*li a:hover:not(.active) 
+{
+  background-color: rgb(90, 87, 87);
+}
+
+/*.active {
+  background-color: #4CAF50;
+}*/
+
+p
+{
+  padding-left: 300px;
+  color: black;
+  font: italic bold 20px/30px Georgia, serif; 
+  text-align: justify;
+}
+
+h3
+{
+  text-transform: capitalize;
+  padding-left: 300px;
+  font-size: 30px;
+	font-family:sofia;
+}
+
+/*label
+{
+  padding-left: 700px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+input
+{
+  margin-left: 700px;
+  font-size: 20px;
+}*/
+
+form
+{
+  padding-left: 460px;
+  margin-top:10px;
+  font-size: 20px;
+}
+
+h5
+{
+  font-size: 25px;
+  padding-left: 520px;  
+  font-family:Georgia, serif;
+  letter-spacing:4px;
+  font-style:italic;
+  
+  	
+}
+
+#sendBtn
+{
+  color: blue;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+
+
+#logo
+{
+  float: right;
+  padding-left: 70px; 
+  min-height: max-content;
+  margin-right:10px;       
+  line-height:10px;  
+  padding-top:5px;  
+}
+
+
+.form-check-label
+{
+	font-size:15px;
+	
+}
+
+
+
+
+#sendBtn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  width: 32%;
+  opacity: 0.9;
+  margin-right:50px;
+  font-weight: bolder; 
+  margin-right:50px;
+  border-radius:25px;
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-style:oblique;
+  font-size:17px;
+}
+
+#sendBtn:hover {
+  opacity: 1;
+  color:black;
+  background-color: #32CD32;
+}
+
+.input-field
+{
+padding:3px;
+}
+
+
+.input-field:focus {
+  border: 3px solid dodgerblue;
+  padding:5px;
+} 
+
+.eye
+{
+color:blue;
+font-size:15px;
+padding-left:200px;
+font:italic bold 12px/25px Georgia, serif;
+}
+
+
+
+ul a:hover{
+  color: red !important;
+}
+
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #FBC02D;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+.active{
+    color:#FBC02D  !important;
+}
+
+
+.style
+{
+	font: italic bold 21px/25px Georgia, serif;
+	
+}
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+      <h1><center> ONLINE CAB BOOKING </center></h1>
+      <br> 
+<ul>
+	<label id="logo"><img src="logo.jpg"></label> 
+  <li><a href="welcome.html"> HOME </a></li>
+  <li><a href="UserLogin.html"> USER </a></li>
+  <li> <a class="nav-link active" href="Admin Login.html"> ADMIN </a></li>
+</ul>
+
+  <h3> <u>Online Cab Booking </u> </h3>
+
+	<p>Book a City Cab to your destination in town...<br> 
+	We give customer satisfaction the atmost priority <br> 
+    and so give ample options to book cab by entering <br>
+    details such as their pick-up point, drop point ,
+    date of journey etc</p>
+
+
+      <h5> <u>ADMIN LOGIN</u> </h5> 
+
+    <form action="adminlogin.jsp" method="post">
+    <div class="style">
+    <i class="fa fa-user icon"></i>  &nbsp 
+       Admin:&nbsp &nbsp &nbsp &nbsp &nbsp  <input id="username"  class="input-field" type = "text" placeholder="user name" name = "user_id" size="22" required />
+         <br> <br>
+         <i class="fa fa-key icon"></i>   
+         Password:&nbsp &nbsp  <input id="password" class="input-field" type = "password" placeholder="password" name = "password" size="22" required /> <br>
+        <div class="eye"><input type="checkbox" onclick="myFunction()">Show Password  </div>
+
+       &nbsp <button onclick="popup()" value="register" id="sendBtn" type="submit" required> LOGIN </button> 
+   </div> 
+    </form>
+
+    <br>
+   
+<script>
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+
+</body>
+</html>

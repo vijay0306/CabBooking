@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Book Cab </title>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+  
+  
+  
+  
+  
+    <script type="text/javascript">
+            		function popup()
+            		{
+            			var DriverName=document.getElementById("drivername");
+            			var VehicleNo=document.getElementById("vehicleno");
+            			if(DriverName.value=="" || VehicleNo.value=="")
+            				swal({
+          					  title: "OOPS!",
+          					  text: "No Blank Values Are Allowed!",
+          					  icon: "error",
+          					  
+          					});
+		              	else
+		              	{
+		    					  alert("Your Booking Has Been Cancelled Successfully!");
+		              	}
+          			}
+   </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<style>
+  body
+  {
+    background: url("cab2.jpg");
+    background-size: cover;
+    color: black;  
+    border-bottom: #333;
+    padding-top: 20px;
+  }
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  letter-spacing: 3px;
+  margin-left: 260px;
+  margin-right: 260px;
+  font-style:oblique;
+  font: italic bold 15px/20px Georgia, serif;
+}
+
+li 
+{
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child 
+{
+  border-right: none;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*li a:hover:not(.active) 
+{
+  background-color: rgb(90, 87, 87);
+}
+
+/*.active {
+  background-color: #4CAF50;
+}*/
+
+p
+{
+  padding-left: 300px;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+h3
+{
+  text-transform: capitalize;
+  padding-left: 300px;
+  font-size: 30px;
+
+}
+
+/*label
+{
+  padding-left: 700px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+input
+{
+  margin-left: 700px;
+  font-size: 20px;
+}*/
+
+form
+{
+  align-items: center;
+  padding-left: 580px;
+  margin-top: 10px;
+}
+
+h5
+{
+  font-size: 30px;
+  padding-left: 680px;
+}
+
+
+
+
+#sendBtn {
+   background-color: dodgerblue;
+  color: white;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  width: 32%;
+  opacity: 0.9;
+  margin-right:50px;
+  font-weight: bolder; 
+  margin-right:50px;
+  border-radius:25px;
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-style:oblique;
+  font-size:17px;
+}
+
+#sendBtn:hover {
+  opacity: 5;
+  color:black;
+  background-color: #32CD32;
+}
+
+.input-field
+{
+padding:3px;
+}
+
+
+.input-field:focus {
+  border: 3px solid dodgerblue;
+  padding:5px;
+} 
+
+h4
+{
+    color: rgb(255, 255, 255);
+    padding-left: 750px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 1em sans-serif;;
+}
+
+#logo
+{
+  float: right;
+  padding-left: 70px; 
+  min-height: max-content;
+  margin-right:10px;       
+  line-height:10px;  
+  padding-top:1px; 
+  margin-top:4px; 
+}
+
+ul a:hover{
+  color: red !important;
+}
+
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #FBC02D;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+.active{
+    color:#FBC02D !important;
+}
+
+h5
+{
+	font-family:sofia;
+	letter-spacing:3px;
+	
+	padding-left:630px;
+}
+
+.style
+{ 
+	font: italic bold 18px/20px Georgia, serif;
+}
+
+</style>
+
+
+</head>
+<body>
+    
+    <h1><center> ONLINE CAB BOOKING </center></h1>
+     
+      <ul>
+      	<label id="logo"><img src="logo.jpg"></label>
+        <li><a href="user welcome.html"> HOME </a></li>
+        <li><a href="search cabs.html">SEARCH CABS </a></li>
+        <li><a href="MyBookings.jsp"> MY BOOKINGS </a></li>
+        <li><a href="welcome.html"> LOGOUT </a></li>
+      </ul>
+      
+      <h5><u>Cancel Your Booking </u>   </h5>
+
+	 <form action="cancel.jsp" method="post">
+		<div class="style">
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Driver Name :  &nbsp &nbsp &nbsp <input id="drivername"class="input-field" type = "text" placeholder=" Driver name" name = "drivername" required />
+        <br> <br>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Vechicle No : &nbsp &nbsp &nbsp &nbsp  <input id="vehicleno" class="input-field" type = "text" placeholder=" Vechicle name" name = "vechicleno" required />
+        <br> <br>
+       &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <button onclick="popup()" value="register" id="sendBtn" type="submit" required> CANCEL </button>
+           
+        </div>
+     </form>
+  
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Book Cab </title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+  
+  <script type="text/javascript">
+            		function popup()
+            		{
+            		
+            			var VehicleNo=document.getElementById("vehicleno");
+            			var Date=document.getElementById("date");
+            			var Time=document.getElementById("time");
+            			
+            			if(VehicleNo.value=="" || Date.value=="" || Time.value=="")
+            				swal({
+            					  title: "OOPS!",
+            					  text: "No Blank Values Are Allowed!",
+            					  icon: "error",
+            					  
+            					});
+                	else
+                		{
+                			alert("YOUR CAB HAS BOOKED SUCCESSFULLY");
+                		}
+            			
+            		}
+   </script>
+  
+  
+  
+<style>
+  body
+  {
+    background: url("cab2.jpg");
+    background-size: cover;
+    color: black;  
+    border-bottom: #333;
+    padding-top: 20px;
+  }
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  letter-spacing: 3px;
+  margin-left: 260px;
+  margin-right: 260px;
+  font-style:oblique;
+  font-weight:bolder;
+}
+
+li 
+{
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child 
+{
+  border-right: none;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+p
+{
+  padding-left: 300px;
+  color: black;
+  text-align: justify;
+  font: italic bold 20px/30px Georgia, serif;
+}
+
+h3
+{
+  text-transform: capitalize;
+  padding-left: 300px;
+  font-size: 30px;
+  font-family:sofia;
+
+}
+
+form
+{
+  align-items: center;
+  padding-left: 520px;  
+  margin-top: 20px;
+}
+
+h5
+{
+  font-size: 28px;
+  padding-left: 600px;
+  font-family:Georgia, serif;
+  letter-spacing:3px;
+  
+}
+
+
+#sendBtn
+{
+  color: blue;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight:bolder;
+}
+
+
+#sendBtn:hover {
+  opacity: 5;
+  color:black;
+  background-color: #32CD32;
+}
+
+
+h4
+{
+    color: rgb(255, 255, 255);
+    padding-left: 750px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 1em sans-serif;;
+}
+
+#logo
+{
+  float: right;
+  padding-left: 70px; 
+  min-height: max-content;
+  margin-right:10px;       
+  line-height:10px;  
+  padding-top:1px; 
+  margin-top:4px; 
+}
+
+.input-field
+{
+padding:1px;
+}
+
+
+.input-field:focus {
+  border: 3px solid dodgerblue;
+  padding:3px;
+} 
+
+#sendBtn {
+ background-color: dodgerblue;
+  color: white;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  margin-right:50px;
+  font-weight: bolder; 
+  margin-right:50px;
+  border-radius:25px;
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-style:oblique;
+  font-size:17px;
+}
+
+#sendBtn:hover {
+  opacity: 1;
+}
+
+
+
+ul a:hover{
+  color: red !important;
+}
+
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #FBC02D;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+.active{
+    color:#FBC02D !important;
+}
+
+
+
+
+.style
+{
+	font: italic bold 18px/25px Georgia, serif;
+	padding-top:5px;
+	text-transform:uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+		<h1><center> ONLINE CAB BOOKING </center></h1>
+    
+     
+      <ul>
+      	<label id="logo"><img src="logo.jpg"></label>
+        <li><a href="user welcome.html"> HOME </a></li>
+        <li><a href="search cabs.html">SEARCH CABS </a></li>
+        <li><a href="MyBookings.jsp"> MY BOOKINGS </a></li>
+        <li><a href="welcome.html"> LOGOUT </a></li>
+      </ul>
+      
+  <h3> <u>Online Cab Booking </u> </h3>
+
+  <p>Book a City Cab to your destination in town...<br> We give customer satisfaction the atmost priority <br> 
+    and so give ample options to book cab by entering <br>
+    details such as their pick-up point, drop point ,
+    date of journey etc</p>
+
+
+      <h5> <u> BOOK CAB </u> </h5>
+
+      <form action="BookCab.jsp" method="post">
+         <div class="style">
+        <i class="fa fa-taxi" aria-hidden="true"></i> &nbsp Vehicle No : &nbsp  <input class="input-field" id="vehicleno" type = "text" placeholder=" Vechicle name" name = "vehicleno" required />
+        <br> <br>
+        <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp  Date :  &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   <input id="date" type="date" id="date" name="date" required>
+        <br> <br> 
+        <i class="fa fa-clock-o" aria-hidden="true"></i> &nbsp Time : &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   <input id="time" type="time" id="time" name="time" required>
+        <br> <br> 
+        </div>
+          &nbsp &nbsp &nbsp  <button onclick="popup()" value="register" id="sendBtn" type="submit" required> BOOK </button> 
+        
+     </form>
+    
+
+
+</body>
+</html>
